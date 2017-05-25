@@ -20,11 +20,15 @@
     /*    flex-flow: */
 }
 
+.col {
+}
+
 .col1 {
     border: 1px solid black;
     background-color: white;
     width: calc(4.166666% * 1);
-    flex: 1 1 auto;
+    padding: 0 2px;
+    --flex: 1 1 auto;
     /* 1(valor padrao) = grow, 1(valor padrao) = shrink, auto(valor padrao) = basis */
     /*    flex-grow: ; Ocupação do resto da largura da div*/
     /*    flex-shrink: 1;  encolhe a div */
@@ -35,147 +39,168 @@
     width: calc(4.166666% * 2);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col3 {
     width: calc(4.166666% * 3);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col4 {
     width: calc(4.166666% * 4);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col5 {
     width: calc(4.166666% * 5);
     background-color: white;
     border: 1px solid black;
-
+    padding: 0 2px;
 }
 
 .col6 {
     width: calc(4.166666% * 6);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col7 {
     width: calc(4.166666% * 7);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col8 {
     width: calc(4.166666% * 8);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col9 {
     width: calc(4.166666% * 9);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col10 {
     width: calc(4.166666% * 10);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col11 {
     width: calc(4.166666% * 11);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col12 {
     width: calc(4.166666% * 12);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
-
 
 .col13 {
     width: calc(4.166666% * 13);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col14 {
     width: calc(4.166666% * 14);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col15 {
     width: calc(4.166666% * 15);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col16 {
     width: calc(4.166666% * 16);
     background-color: white;
     border: 1px solid black;
-
+    padding: 0 2px;
 }
 
 .col17 {
     width: calc(4.166666% * 17);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col18 {
     width: calc(4.166666% * 18);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col19 {
     width: calc(4.166666% * 19);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col20 {
     width: calc(4.166666% * 20);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col21 {
     width: calc(4.166666% * 21);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col22 {
     width: calc(4.166666% * 22);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 .col23 {
     width: calc(4.166666% * 23);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
+
 .col24 {
     width: calc(4.166666% * 24);
     background-color: white;
     border: 1px solid black;
+    padding: 0 2px;
 }
 
 
 /*
 .col1:nth-child(2) {
     order: 0;
-}
+    padding: 0 2px; }
 */
 
 .col {
@@ -183,24 +208,25 @@
     border: 1px solid black;
 }
 
-.conteudo{
+.conteudo {
     height: 500px;
+    width: 700px;
     border: 1px solid black;
-    margin: 10px 10%;
+    --margin: 10px 10%;
 }
 
 
 /*
 .col1:nth-child(8){
     flex-grow: 2;
-}
+    padding: 0 2px; }
 
 
 .col1:nth-child(2){
     flex-shrink: 3;
-}
+    padding: 0 2px; }
 
 .col1:nth-child(2){
     flex-basis: 3;
-}
+    padding: 0 2px; }
 */
