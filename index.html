@@ -10,42 +10,60 @@
 
 <body>
     <div class="grid">
-        <div class="col col1">1</div>
-        <div class="col col1">2</div>
-        <div class="col col1">3</div>
-        <div class="col col1">4</div>
-        <div class="col col1">5</div>
-        <div class="col col1">6</div>
-        <div class="col col1">7</div>
-        <div class="col col1">8</div>
-        <div class="col col1">9</div>
-        <div class="col col1">10</div>
-        <div class="col col1">11</div>
-        <div class="col col1">12</div>
-        <div class="col col1">13</div>
-        <div class="col col1">14</div>
-        <div class="col col1">15</div>
-        <div class="col col1">16</div>
-        <div class="col col1">17</div>
-        <div class="col col1">18</div>
-        <div class="col col1">19</div>
-        <div class="col col1">20</div>
-        <div class="col col1">21</div>
-        <div class="col col1">22</div>
-        <div class="col col1">23</div>
-        <div class="col col1">24</div>
+        <nav></nav>
     </div>
-    <div class="grid">
-        <div class="col col1">1</div>
-        <div class="col col4">
-            <div class="col col24">
-                <div class="conteudo"></div>
+    <div class="grid margin-grid">
+        <div class="col1 col">1</div>
+        <div class="col4 col">
+            <ul class="tab-sistem grid">
+                <li class="col12">
+                    <input class="with-gap display-none" type="radio" nome="teste" id="xml">
+                    <label for="xml">XML</label>
+                </li>
+                <li class="col12">
+                    <input class="with-gap display-none" type="radio" nome="teste" id="sped">
+                    <label for="sped">SPED</label>
+                </li>
+            </ul>
+            <div class="grid">
+                <div id="tab1" class="col24 tab-content">
+                    <fieldset>
+                        <legend>Operações</legend>
+                        <div class="col1">
+                            <input class="with-gap" name="group1" type="radio" id="test1" />                                
+                            <label for="test1">Saida</label>
+                            <input class="with-gap" name="group1" type="radio" id="test2" />
+                            <label for="test2">Yellow</label>
+                            <input class="with-gap" name="group1" type="radio" id="test3" />
+                            <label for="test3">Green</label>
+                            <input class="with-gap" name="group1" type="radio" id="test4" />
+                            <label for="test4">Brown</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="tab2" class="col24 tab-content">
+                    <fieldset>
+                        <div class="col1">
+                            <input class="with-gap" name="group2" type="radio" id="test5" />
+                            <label for="test5">aaaaaaaaaaaaaaaaaaaaaaa</label>
+                            <input class="with-gap" name="group2" type="radio" id="test6" />
+                            <label for="test6">Yellow</label>
+                            <input class="with-gap" name="group2" type="radio" id="test7" />
+                            <label for="test7">Green</label>
+                            <input class="with-gap" name="group2" type="radio" id="test8" />
+                            <label for="test8">Brown</label>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
         </div>
-        <div class="col col18">18</div>
-        <div class="col col1">1</div>
+        <div class="col18 col">
+
+        </div>
+        <div class="col1 col">1</div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="materialize/js/materialize.js"></script>
 </body>
+
 </html>
