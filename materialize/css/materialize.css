@@ -3352,7 +3352,7 @@ nav ul a span.badge {
   }
 }
 
-.container .row {
+.container  {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
@@ -3377,14 +3377,10 @@ nav ul a span.badge {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .row .col {
   float: left;

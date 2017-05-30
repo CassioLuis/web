@@ -5,27 +5,97 @@
     font-size: 10pt;
 }
 
-
-
-*, *:before, *:after {
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
-
-
 
 .grid {
     --margin: 2px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* wrap(quebra linha), no-wrap(nao quebra linha) */
-    justify-content: flex-start;
-    --align-items: stretch;
     transition: 1s;
-    /*start, end, strech, center, baseline*/
-    /*    align-content: */
+    display: flex;
+    align-content: flex-start;
     /*    flex-flow: */
 }
+
+.border-grid{
+    border: 1px solid black;
+}
+
+.margin-grid {
+    margin-top: 50px;
+}
+.height-grid {
+    height: 100px;
+}
+
+.padding-grid {
+    padding: 10px;
+}
+
+
+/* DIRECAO DOS ITENS DO GRID */
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+
+/*=======================================================*/
+
+
+/* PROPRIEDADES PARA ALINHAMENTO VERTICAL DOS ITEMS DO GRID */
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+
+/*=======================================================*/
+
+
+/* PROPRIEDADES PARA ALINHAMENTO HORIZONTAL DOS ITEMS DO GRID */
+
+.wrap {
+    /* wrap(quebra linha), no-wrap((valor padrao) nao quebra linha) */
+    flex-wrap: wrap;
+}
+
+.center {
+    justify-content: center;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+
+/*=========================================================*/
 
 .col1 {
     width: calc(4.166666% * 1);
@@ -141,6 +211,7 @@
     outline-offset: -1px;
     text-align: center;
     --padding: 0 5px;
+    margin: 1px;
 }
 
 .conteudo {
@@ -149,31 +220,38 @@
     --margin: 10px 10%;
 }
 
-
-.tab-content{
+.tab-content {
     transform: 1s;
     background-color: #e0e0e0;
     padding: 5px;
+    border: 1px solid black;
     border-radius: 0 0 4px 4px;
 }
-.tab-content label{
+
+.tab-content label {
     float: left;
     display: block;
     flex: initial;
 }
 
+#xml:checked < li < ul>div>div {
+    display: none !important;
+}
 
-legend{
+legend {
     color: black;
     padding: 5px;
     font-weight: bold;
     user-select: none;
 }
-fieldset{
+
+fieldset {
     padding: 5px;
     border-radius: 4px;
+    border: 1px solid black;
 }
-.tab-sistem li{
+
+.tab-sistem li {
     cursor: pointer;
     height: 50px;
     line-height: 50px;
@@ -183,19 +261,20 @@ fieldset{
     --outline-offset: -1px;
     position: relative;
     border: 1px solid black;
-    border-radius: 3px 3px 0 0 ;
+    border-radius: 3px 3px 0 0;
 }
-.margin-grid{
-    margin-top: 50px;
-}
-.display-none{
+
+.display-none {
     display: none !important;
 }
+
+
 /*
 .with-gap:checked ~label{
     background-color: #e0e0e0;
 }
 */
+
 
 /*
 #sped:checked ~ #tab2{
@@ -203,15 +282,18 @@ fieldset{
 }
 */
 
-.tab-sistem li label{
+.tab-sistem li label {
     position: absolute;
     text-align: center;
     height: 100%;
     width: 100%;
 }
-#tab2{
+
+#tab2 {
     display: none;
 }
+
+
 /*
 .col1:nth-child(8){
     flex-grow: 2;
